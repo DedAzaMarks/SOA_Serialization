@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package format_comparison;
+
+option go_package = "protoTest/";
+
+message Test {
+  bool Bool = 1;
+  int32 R = 2;
+  int32 I32 = 3;
+  int64 I64 = 4;
+  float F32 = 5;
+  double F64 = 6;
+  string S = 7;
+
+  repeated bool SBool =8;
+  repeated int32 SR = 9;
+  repeated int32 SI32 = 10;
+  repeated int64 SI64 = 11;
+  repeated float SF32 = 12;
+  repeated double SF64 = 13;
+  repeated string SS = 14;
+
+  map<string, string> MS = 15;
+}
